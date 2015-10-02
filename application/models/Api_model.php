@@ -41,7 +41,6 @@ class Api_model extends MY_Model
     {
         //mocking
         //
-        usleep(250000);
         //return '504';
         //return '501';
         return '200';
@@ -50,19 +49,19 @@ class Api_model extends MY_Model
     }
 
     /**
-     * Query coova server API to return MAC address of device
-     * @param  string $ip  
-     * @return string $mac_address
+     * [get_coova_session_by_ip description]
+     * @param  string $ip 
+     * @return string json data
      */
-    public function get_device_mac_address_by_ip($ip)
+    public function get_coova_session_by_ip($ip)
     {
-        if (! $ip) {
-            return '';
-        }
+        //mocking, should call coova to query data
+        $array['mac_address'] = 'EC-FF-B5-00-41-71';
+        $array['ip_address'] = $ip;
+        $array['authenticated'] = true;
+        $array['throttled'] = true;
 
-        //mocking
-        usleep(200000);
-        return  'EC-FF-B5-00-41-71';
-
+        return json_encode($array);
     }
+
 }

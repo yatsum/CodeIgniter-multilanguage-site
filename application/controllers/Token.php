@@ -15,7 +15,8 @@ class Token extends Public_Controller
         $result = $this->token_model->validate($this->input->post('token'));
             
         if ($result == 'success') {
-            //do whatever needed and redirect
+            //do whatever needed to authenticate user
+            //
             redirect('home/status');
  
         }

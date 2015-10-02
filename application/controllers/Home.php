@@ -8,6 +8,9 @@ class Home extends Public_Controller
     public function __construct()
     {
         parent::__construct();
+
+        $this->load->language('home_lang', $this->get_language_folder());
+
     }
 
     public function index()

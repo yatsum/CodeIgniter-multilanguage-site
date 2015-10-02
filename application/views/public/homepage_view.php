@@ -3,7 +3,7 @@
 <div class="container" style="margin-top: 60px;">
         <div class="row">
             <div class="col-lg-4 col-lg-offset-4">
-                <h1>Say Hi! From Sky!</h1>
+                <h1><?php echo lang('homepage_welcome') ?></h1>
                 <?php echo form_open('token/validate', array('id' => 'token-form'));?>
                 <div class="form-group">
                     <?php

@@ -88,7 +88,7 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url');
+$autoload['helper'] = array('url', 'language');
 
 
 /*
@@ -104,7 +104,7 @@ $autoload['helper'] = array('url');
 |
 */
 
-$autoload['config'] = array('cms_settings');
+$autoload['config'] = array('cms_settings', 'language_settings');
 
 
 /*

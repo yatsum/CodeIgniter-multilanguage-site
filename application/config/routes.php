@@ -49,5 +49,8 @@ $route['^(\w{2})$'] = $route['default_controller'];
 $route['token/validate']['post'] = 'token/validate';
 $route['token/validate']['get'] = '404_override';
 
+
+//set language
+$route['language/(:any)'] = 'language/set_language/$1';
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
