@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Device_model extends MY_Model
+class Device_model extends CI_Model
 {
     public $ip_address;
     public $coova_session;

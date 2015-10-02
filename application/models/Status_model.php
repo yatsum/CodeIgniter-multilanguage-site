@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Status_model extends MY_Model
+class Status_model extends CI_Model
 {
     protected $connection_status;
 
