@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php echo $page_title;?></title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="<?php echo site_url('assets/admin/js/bootstrap.min.js');?>"></script>
+
         <link href="<?php echo site_url('assets/admin/css/bootstrap.min.css');?>" rel="stylesheet">
         <?php echo $before_head;?>
     </head>

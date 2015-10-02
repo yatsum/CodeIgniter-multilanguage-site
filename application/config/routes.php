@@ -45,5 +45,9 @@ $route['^(\w{2})/(.*)'] = function($language, $link) use ($controllers_methods)
 };
 $route['^(\w{2})$'] = $route['default_controller'];
 
+//only accept POST verb
+$route['token/validate']['post'] = 'token/validate';
+$route['token/validate']['get'] = '404_override';
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
