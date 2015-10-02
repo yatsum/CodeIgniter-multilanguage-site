@@ -28,7 +28,7 @@
       <div class="modal-content">
         <div class="modal-body">
           <p class="lead">
-            Please  Wait
+           <?php echo lang('homepage_wait') ?>
           </p>
         </div>
       </div>

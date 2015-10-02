@@ -104,7 +104,7 @@ $autoload['helper'] = array('url', 'language');
 |
 */
 
-$autoload['config'] = array('cms_settings', 'language_settings');
+$autoload['config'] = array('language_settings');
 
 
 /*

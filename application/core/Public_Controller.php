@@ -12,14 +12,7 @@ class Public_Controller extends MY_Controller
     {
         parent::__construct();
 
-        $language = $this->data['current_lang'];
-        
-        $this->language = $this->session->language;
-        
-
-        $idiom = $language['language_directory'];
-        
-        $this->load->language('interface_lang', $idiom);
+       
         
         $this->load->model('status_model');
         $this->connection_status = $this->connection_status();
@@ -28,14 +21,13 @@ class Public_Controller extends MY_Controller
         
         $this->device = $this->device_model;
 
+        $this->language = $this->session->language;
         $this->force_select_language();
 
     }
 
     protected function render($the_view = null, $template = 'public_master')
     {
-        $this->load->library('menus');
-        $this->data['top_menu'] = $this->menus->get_menu('top-menu', $this->current_lang, 'bootstrap_menu');
         $this->data['connection_status'] = $this->connection_status;
         parent::render($the_view, $template);
     }

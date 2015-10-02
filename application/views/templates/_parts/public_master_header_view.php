@@ -1,11 +1,11 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');?>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title><?php echo $page_title;?></title>
+        <title>roKKi</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="<?php echo site_url('assets/admin/js/bootstrap.min.js');?>"></script>
 
@@ -45,12 +45,4 @@
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <?php if($this->session->flashdata('message')) {?>
-    <div class="container" style="padding-top:40px;">
-        <div class="alert alert-info alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                    aria-hidden="true">&times;</span></button>
-            <?php echo $this->session->flashdata('message');?>
-        </div>
-    </div>
-    <?php }?>
+ 

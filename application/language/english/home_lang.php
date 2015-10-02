@@ -2,3 +2,4 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['homepage_welcome'] = 'Say Hi! From the Sky!';
+$lang['homepage_wait'] = 'Please wait';
